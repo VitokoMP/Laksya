@@ -1,0 +1,277 @@
+.navbar-brand-logo{
+  max-width: 35%;
+  padding: 0px 0; /* Espaciado interior */
+  margin-top: -33px;
+  margin-bottom: -33px;
+
+}
+
+.hero-section {
+  background-image: url('../img/Home.png'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0; /* Espaciado interior */
+  color: white; /* Color de texto */
+
+}
+
+.navbar-nav{
+  text-align: right; /* Alineación a la derecha */
+  
+}
+
+.navbar-toggler-icon{
+  opacity: 1; /* La imagen comienza completamente transparente */
+  float: right;
+  
+}
+/* Estilo inicial */
+.img-codes {
+  opacity: 0; /* La imagen comienza completamente transparente */
+  max-width: 100%;
+  height: auto;
+  margin-top: 33px;
+  margin-left: 0px;
+  animation: fadeInOut 4s ease-in-out forwards infinite; /* Animación de fadeInOut */
+}
+
+/* Definición de la animación */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; /* La imagen está completamente transparente al inicio y al final */
+  }
+  50% {
+    opacity: 1; /* La imagen está completamente visible en la mitad de la animación */
+  }
+}
+
+
+.background-image-container {
+  position: relative;
+}
+
+.hero-section h1,
+.hero-section p {
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo translúcido para texto */
+  padding:  0px; /* Espaciado interno del texto */
+}
+
+.hero-section a.btn {
+  margin-top: 2px; /* Espaciado superior del botón */
+}
+
+/* Estilos para imágenes redondas */
+ 
+/* Estilos generales para todas las pantallas */
+.round-images-section .col-md-4 img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  margin-bottom: 5px; /* Espaciado entre líneas */
+}
+
+/* Aumento al pasar el cursor */
+.round-images-section .col-md-4 img:hover {
+  transform: scale(1.1); /* Aumento del 10% al pasar el cursor */
+}
+
+/* Atenuación hacia blanco */
+.round-images-section .col-md-4 img {
+  filter: brightness(90%); /* Atenuación del 10% hacia blanco */
+}
+
+/*seccion navbar*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 0px 00px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 2 px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #e8e8e8;
+}
+
+/* Cambia el color de fondo al hacer scroll */
+ .navbar.scrolled {
+  /*background-color: rgba(0, 0, 0, 0.7); /* Color de fondo con opacidad al hacer scroll */
+  background-color: transparent; /* Hacer la barra de navegación completamente transparente */
+  box-shadow: none; /* Eliminar la sombra */
+}
+
+/*colab and mkt*/
+.background-image-container {
+  background-image: url('../public/img/black.png'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: bottom;
+  padding: 100px 0; /* Espaciado interior */
+  color: white; /* Color de texto */}
+
+  
+.background-image-container-contact {
+  background-image: url('../img/3.png'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: bottom;
+  padding: 100px 0; /* Espaciado interior */
+  color: rgba(0, 0, 0, 0.845); /* Color de texto */}
+  .aligned-section {
+      padding: 50px 0; /* Espaciado interior */
+      background-color: #f0f0f000; /* Color de fondo opcional */
+  }
+  
+  .aligned-section p {
+      text-align: right; /* Alineación a la derecha */
+      margin-bottom: 20px; /* Espacio entre párrafos */
+  }
+  
+
+/* Media query para dispositivos móviles (ancho máximo de 767px) */
+
+/* header de cards + en FAQs.css */
+
+.my-5 {
+margin-top: 3rem !important;
+margin-bottom: 3rem !important;
+}
+
+.mb-3 {
+margin-bottom: 1rem !important;
+}
+
+.card {
+border: 1px solid #ddd;
+}
+
+.card-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #0b6bcbd4;
+cursor: pointer;
+}
+
+.card-header::after {
+content: '+';
+font-size: 1.25rem;
+}
+
+.card-body {
+background-color: white;
+}
+
+.card-text {
+margin: 0;
+color: black;
+}
+
+/*atencion con las modificaciones al footer, requiere img de certificado PD.*/
+
+/* Estilos para el footer */
+footer {
+background-color: #343a40;
+color: #fff;
+}
+
+footer a {
+color: #fff;
+}
+
+footer a:hover {
+color: #ffc107;
+}
+
+footer ul {
+padding: 0;
+list-style: none;
+}
+
+footer .container {
+max-width: 1200px;
+}
+
+footer .py-4 {
+padding-top: 1.5rem !important;
+padding-bottom: 1.5rem !important;
+}
+
+footer .bg-secondary {
+background-color: #6c757d;
+}
+
+footer .bg-secondary p {
+margin-bottom: 0;
+}
+
+/*Contenido del popUP*/
+.popup-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Transparencia */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999; /* Ajusta el z-index para que esté por encima de todas las demás secciones */
+
+}
+
+.popup {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+}
+
+/* Para bloquear el desplazamiento de la página */
+.no-scroll {
+overflow: hidden;
+}
+
+@media (max-width: 400px) {
+  .navbar-collapse {
+    justify-content: right; /* Alinea los elementos de la barra de navegación al centro en pantallas pequeñas */
+  }
+
+  .navbar-nav {
+    text-align: right; /* Alinea los elementos de la lista de navegación al centro en pantallas pequeñas */
+    margin-top: 10px; /* Ajusta el margen superior de la lista de navegación */
+  }
+
+  .navbar-brand {
+    margin-right: auto; /* Mueve el logo de la marca al extremo izquierdo en pantallas pequeñas */
+    margin-right: -221px;
+
+  } 
+}
