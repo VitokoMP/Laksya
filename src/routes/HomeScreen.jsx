@@ -281,7 +281,18 @@ export const HomeScreen = () => {
     <div className="ayurveda-fusion">
       {/* HERO CON AURORA + NOISE */}
       <section className="hero-section">
-        <div className="hero-bg"></div>
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+          src="/mixkit-fungus-growing-on-a-tree-15447-hd-ready.mp4"
+          type="video/mp4"
+          />
+        </video>
         <div className="hero-aurora"></div>
         <div className="hero-aurora-layer"></div>
         <div className="noise-overlay"></div>
@@ -722,6 +733,7 @@ export const HomeScreen = () => {
         }
 
         .hero-content {
+          position: relative;
           text-align: center;
           z-index: 3;
           padding: 2rem;
@@ -1707,6 +1719,17 @@ export const HomeScreen = () => {
           .section-titulo { font-size: 1.6rem; }
           .carrito-modal { max-width: 100%; }
         }
+
+        .hero-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        opacity: 0.35;
+        filter: brightness(0.6) contrast(1.1) saturate(0.9);
+      }
       `}</style>
     </div>
   );
