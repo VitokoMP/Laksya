@@ -918,7 +918,7 @@ export const HomeScreen = () => {
           padding: 5rem 2rem;
           max-width: 1400px;
           margin: 0 auto;
-          opacity: 0;
+          opacity: 1;
           transform: translateY(30px);
           transition: all 0.8s;
         }
